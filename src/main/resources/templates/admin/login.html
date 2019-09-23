@@ -19,7 +19,7 @@
             vertical-align: bottom;
         }
         #particles {
-            background-color: #F7FAFC;
+            background-color: #f3fc98;
             position: absolute;
             top: 0;
             width: 100%;
@@ -38,7 +38,7 @@
     <!-- /.login-logo -->
     <div class="card">
         <div class="card-body login-card-body">
-            <p class="login-box-msg">your personal blog , enjoy it</p>
+            <p class="login-box-msg">Please login in, My master</p>
             <form th:action="@{/admin/login}" method="post">
                 <div th:if="${not #strings.isEmpty(session.errorMsg)}" class="form-group">
                     <div class="alert alert-danger" th:text="${session.errorMsg}"></div>
