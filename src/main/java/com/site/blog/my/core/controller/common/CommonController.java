@@ -4,6 +4,7 @@ import com.google.code.kaptcha.impl.DefaultKaptcha;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.imageio.ImageIO;
 import javax.servlet.ServletOutputStream;
@@ -13,10 +14,7 @@ import java.awt.image.BufferedImage;
 import java.io.ByteArrayOutputStream;
 
 /**
- * @author 13
- * @qq交流群 796794009
- * @email 2449207463@qq.com
- * @link http://13blog.site
+ * @author crab179
  */
 @Controller
 public class CommonController {
@@ -25,6 +23,7 @@ public class CommonController {
     private DefaultKaptcha captchaProducer;
 
     @GetMapping("/common/kaptcha")
+    @ResponseBody
     public void defaultKaptcha(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) throws Exception {
         byte[] captchaOutputStream = null;
         ByteArrayOutputStream imgOutputStream = new ByteArrayOutputStream();

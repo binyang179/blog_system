@@ -14,10 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.Map;
 
 /**
- * @author 13
- * @qq交流群 796794009
- * @email 2449207463@qq.com
- * @link http://13blog.site
+ * @author crab179
  */
 @Controller
 @RequestMapping("/admin")
@@ -52,7 +49,9 @@ public class LinkController {
                        @RequestParam("linkUrl") String linkUrl,
                        @RequestParam("linkRank") Integer linkRank,
                        @RequestParam("linkDescription") String linkDescription) {
-        if (linkType == null || linkType < 0 || linkRank == null || linkRank < 0 || StringUtils.isEmpty(linkName) || StringUtils.isEmpty(linkName) || StringUtils.isEmpty(linkUrl) || StringUtils.isEmpty(linkDescription)) {
+        if (linkType == null || linkType < 0 || linkRank == null || linkRank < 0 ||
+                StringUtils.isEmpty(linkName) || StringUtils.isEmpty(linkName) ||
+                StringUtils.isEmpty(linkUrl) || StringUtils.isEmpty(linkDescription)) {
             return ResultGenerator.genFailResult("参数异常！");
         }
         BlogLink link = new BlogLink();
@@ -89,7 +88,9 @@ public class LinkController {
         if (tempLink == null) {
             return ResultGenerator.genFailResult("无数据！");
         }
-        if (linkType == null || linkType < 0 || linkRank == null || linkRank < 0 || StringUtils.isEmpty(linkName) || StringUtils.isEmpty(linkName) || StringUtils.isEmpty(linkUrl) || StringUtils.isEmpty(linkDescription)) {
+        if (linkType == null || linkType < 0 || linkRank == null || linkRank < 0 ||
+                StringUtils.isEmpty(linkName) || StringUtils.isEmpty(linkName) ||
+                StringUtils.isEmpty(linkUrl) || StringUtils.isEmpty(linkDescription)) {
             return ResultGenerator.genFailResult("参数异常！");
         }
         tempLink.setLinkType(linkType.byteValue());

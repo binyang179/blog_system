@@ -139,6 +139,9 @@ function linkEdit() {
             if (r.data.linkType == 2) {
                 $("#linkType option:eq(2)").prop("selected", 'selected');
             }
+            if (r.data.linkType == 0) {
+                $("#linkType option:eq(0)").prop("selected", 'selected');
+            }
         }
     });
     $('.modal-title').html('友链修改');

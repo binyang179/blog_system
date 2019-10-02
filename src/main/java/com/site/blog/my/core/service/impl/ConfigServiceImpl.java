@@ -23,12 +23,12 @@ public class ConfigServiceImpl implements ConfigService {
     public static final String websiteIcon = "/admin/dist/img/favicon.png";
 
     public static final String yourAvatar = "/admin/dist/img/13.png";
-    public static final String yourEmail = "2449207463@qq.com";
-    public static final String yourName = "十三";
+    public static final String yourEmail = "binyang3179@gmail.com";
+    public static final String yourName = "斌斌";
 
     public static final String footerAbout = "your personal blog. have fun.";
-    public static final String footerICP = "浙ICP备 xxxxxx-x号";
-    public static final String footerCopyRight = "@2018 十三";
+    public static final String footerICP = "号";
+    public static final String footerCopyRight = "@2019 haha";
     public static final String footerPoweredBy = "personal blog";
     public static final String footerPoweredByURL = "##";
 

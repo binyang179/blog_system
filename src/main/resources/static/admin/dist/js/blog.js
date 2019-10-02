@@ -60,6 +60,7 @@ $(function () {
 /**
  * 搜索功能
  */
+
 function search() {
     //标题关键字
     var keyword = $('#keyword').val();

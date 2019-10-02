@@ -18,16 +18,12 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.Map;
 import java.util.Random;
-import java.util.UUID;
 
 /**
- * @author 13
- * @qq交流群 796794009
- * @email 2449207463@qq.com
- * @link http://13blog.site
+ * @author crab179
  */
+
 @Controller
 @RequestMapping("/admin")
 public class UploadController {
@@ -61,5 +57,4 @@ public class UploadController {
             return ResultGenerator.genFailResult("文件上传失败");
         }
     }
-
 }

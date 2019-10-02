@@ -26,6 +26,7 @@
                     </div>
                     <div class="card-body">
                         <!-- 几个基础的输入框，名称、分类等输入框 -->
+
                         <form id="blogForm" onsubmit="return false;">
                             <div class="form-group" style="display:flex;">
                                 <input type="hidden" id="blogId" name="blogId" th:value="${blog!=null and blog.blogId!=null }?${blog.blogId}: 0">

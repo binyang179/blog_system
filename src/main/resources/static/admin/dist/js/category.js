@@ -43,9 +43,11 @@ $(function () {
         hide_select: false,
         show_label: true,
     });
+
     $(window).resize(function () {
         $("#jqGrid").setGridWidth($(".card-body").width());
     });
+
     var container = jQuery("select.image-picker.masonry").next("ul.thumbnails");
     container.imagesLoaded(function () {
         container.masonry({
@@ -62,6 +64,7 @@ function imgFormatter(cellvalue) {
 /**
  * jqGrid重新加载
  */
+
 function reload() {
     var page = $("#jqGrid").jqGrid('getGridParam', 'page');
     $("#jqGrid").jqGrid('setGridParam', {
@@ -163,7 +166,6 @@ function deleteCagegory() {
         }
     );
 }
-
 
 function reset() {
     $("#categoryName").val('');

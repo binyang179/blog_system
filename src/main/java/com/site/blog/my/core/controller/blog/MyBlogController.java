@@ -16,17 +16,14 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @author 13
- * @qq交流群 796794009
- * @email 2449207463@qq.com
- * @link http://13blog.site
+ * @author crab179
  */
 @Controller
 public class MyBlogController {
 
-    //public static String theme = "default";
-    //public static String theme = "yummy-jekyll";
-    public static String theme = "amaze";
+//    public static String theme = "default";
+    public static String theme = "yummy-jekyll";
+//    public static String theme = "amaze";
     @Resource
     private BlogService blogService;
     @Resource
